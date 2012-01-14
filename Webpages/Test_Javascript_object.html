@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--（此標籤包住的內容為註解）以上為XML和DTD(Document Type
+    Definition)的宣告-->
+<!--
+測試Javascript物件(Object) | HTML測試專案
+    本網頁使用的智慧財產授權：
+      創用CC　姓名標示─非商業性─相同方式分享(BY-NC-SA) 目前最新版本
+    詳細資料註明於下方meta元素。
+已知問題：
+
+待辦事項：
+
+-->
+
+<!--html標籤：html主要內容
+    XHTML規範需要／選用的屬性：xmlns, xml:lang
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xml:lang="zh_TW"
+       lang="zh_TW">
+  <!--head標籤：包含一些metadata（中介資料）-->
+  <head>
+    <!--title標籤：顯示於標題列(title bar)的文字-->
+    <title>測試Javascript物件(Object) | HTML測試專案</title>
+    <!--meta標籤：一些非此標籤所能表示的一些其他的metadata（中介資料）
+          name屬性：metadata的名稱
+            author：網頁的創作者名稱。
+            description：網頁的內容描述。
+            generator：產生這份網頁的軟體名稱。
+            keyword：這個網頁的關鍵字。
+            robots：要求搜索引擎的索引軟體對這個網頁採取的行動。
+          content屬性：這個metadata名稱之內容
+          http-equiv屬性：用來變更伺服器跟user-agent的行為，使用content屬性定義這個屬性的值。
+            content-type：
+              text/html：原本要用application/xhtml+xml的MIME（Multipurpose Internet Mail Extensions，多用途網際網路郵件檔案類型），不過為了增加HTML 4相容性故使用text/html
+              charset：網頁內容使用的字元集合(charset)
+          參考網址：https://developer.mozilla.org/en/HTML/Element/meta
+    -->
+    <!--網頁版本-->
+    <meta name="webpage-version" content="1.04(4)201112092110" />
+    <!--XHTML範本版本-->
+    <meta name="template-version" content="1.07(11)201112012334" />
+    <meta name="author" content="林博仁(Henry Lin, pika1021@gmail.com)" />
+    <meta name="description" content="" />
+    <meta name="generator" content="Kate文字編輯器" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!--
+    <link href='' rel='stylesheet' type='text/css' />
+    <style type='text/css'>
+
+    </style>測試Javascript物件(Object) | HTML測試專案
+    <script src='' type='text/javascript'>
+    -->
+    <!--通用CSS樣式表-->
+    <link href='../Stylesheets/Generic_stylesheet.css' rel='stylesheet' type='text/css' />
+    <script type='text/javascript'>
+      <!--
+      function getElement(){
+        document.getElementById("an_element").style.color = "red";
+
+      }
+      //-->
+    </script>
+  </head>
+  <!--body標籤：包含網頁的內容(content)
+      XHTML規範需要／選用的屬性：
+        xml:lang：用來宣告XML使用的語言
+      參考網址：https://developer.mozilla.org/en/HTML/Element/body
+  -->
+  <body xml:lang="zh-TW" lang="zh-TW">
+    <!--header-->
+    <!--版本：1.01(1)201112021727-->
+    <div class='header'>
+      <a href='Test_Javascript.html' target='_self'>到外層頁面</a>
+      <hr />
+    </div>
+    <h1>測試Javascript物件(Object)</h1>
+    <h2>--Document物件--</h2>
+    參考資料：<a href='https://developer.mozilla.org/en/DOM/document' target='_blank'>MDN</a><br />
+    <h3>document物件的method（行為）</h3>
+    <h4>element &lt;- document.getElementById()</h4>
+    按下<input type='button' value='這個按鈕' onclick='getElement()' />以呼叫document.getElementById()
+    以將<span id='an_element'>這一段文字</span>的顏色變更為紅色。
+    <h4>document.write(要寫入document的String（字串）)、document.writeln(要寫入document的String（字串）)</h4>
+    <!--<div id='document_method_result'></div>-->
+    <script type='text/javascript'>
+      <!--
+      //var document_method_result_div = document.getElementById("document_method_result");
+      document.write("這段句子由document.write()所寫入<br />");
+      document.writeln("這段句子由document.writeln()所寫入<br />");
+      //-->
+    </script>
+
+    <h3>Document物件的屬性(property)</h3>
+    <h4>document.lastModified</h4>
+    <script type='text/javascript'>
+      <!--
+      document.writeln("這個網頁的最後修改日期為：" + document.lastModified + "。<br />");
+      //-->
+    </script>
+    <h4>document.cookie</h4>
+    <script type='text/javascript'>
+      <!--
+      document.writeln("這個網站原來保存的cookie資料為：" + unescape(document.cookie) + "。<br />");
+      document.writeln("document.cookie = \"an_identifier=a_value\";");
+      document.cookie = "an_identifier=a_value";
+      document.writeln("這個網站現在保存的cookie資料為：" + document.cookie + "。<br />");
+      //-->
+    </script>
+
+
+    <h2>--Math物件--</h2>
+    參考資料：<a href='https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math' target='_blank'>MDN</a><br />
+    <div id='math_result'></div>
+    <script type='text/javascript'>
+      <!--
+
+      var math_result_div = document.getElementById("math_result");
+      /*常數*/
+      math_result_div.innerHTML += "<h3>Math物件的常數(constant)</h3>";
+      {
+      math_result_div.innerHTML += "Math.PI = " + Math.PI + "<br />";
+
+      //分隔線
+      math_result_div.innerHTML += "<hr />";
+
+      math_result_div.innerHTML += "Math.E = " + Math.E + "<br />";
+      math_result_div.innerHTML += "Math.LOG2E = log<sub>2</sub>e = " + Math.LOG2E + "<br />";
+      math_result_div.innerHTML += "Math.LOG10E = log<sub>10</sub>e = " + Math.LOG10E + "<br />";
+      math_result_div.innerHTML += "Math.LN2 = log<sub>e</sub>2 = " + Math.LN2 + "<br />";
+      math_result_div.innerHTML += "Math.LN10 = log<sub>e</sub>10 = " + Math.LN10 + "<br />";
+      //分隔線
+      math_result_div.innerHTML +=
+        "<hr />";
+
+      math_result_div.innerHTML += "Math.SQRT1_2 = (0.5)<sup>-1</sup> = " +
+Math.SQRT1_2 + "<br />";
+      math_result_div.innerHTML += "Math.SQRT2 = 2<sup>-1</sup> = " + Math.SQRT2 + "<br />";
+      }
+
+      /*Method*/
+      math_result_div.innerHTML += "<h3>Math物件的method</h3>";
+      {
+      var a_minus = -13.2;
+      math_result_div.innerHTML += "Math.abs(" + a_minus + ") = " + Math.abs(a_minus) + "<br />";
+
+      //分隔線
+      math_result_div.innerHTML +=
+        "<hr />";
+      }
+      {
+      var a_float = 3.2;
+      math_result_div.innerHTML += "Math.ceil(" + a_float + ") = " + Math.ceil(a_float) + "<br />";
+      math_result_div.innerHTML += "Math.floor(" + a_float + ") = " + Math.floor(a_float) + "<br />";
+
+      var a_float01 = 2.4;
+      var a_float02 = 2.5;
+      math_result_div.innerHTML += "Math.round(" + a_float01 + ") = " + Math.round(a_float01) + "<br />";
+      math_result_div.innerHTML += "Math.round(" + a_float02 + ") = " + Math.round(a_float02) + "<br />";
+
+      //分隔線
+      math_result_div.innerHTML +=
+        "<hr />";
+      }
+      {
+
+      math_result_div.innerHTML += "Math.cos(" + 0 + ") = " + Math.cos(0) + "<br />";
+      math_result_div.innerHTML += "Math.sin(Math.PI / 2) = " + Math.sin(Math.PI / 2) + "<br />";
+      math_result_div.innerHTML += "Math.tan(Math.PI / 4) = " + Math.tan(Math.PI / 4) + "<br />";
+
+      //分隔線
+      math_result_div.innerHTML +=
+        "<hr />";
+      }
+      {
+      var an_exp01 = 1;
+      var an_e = Math.exp(an_exp01);
+
+      math_result_div.innerHTML += "Math.exp(" + an_exp01 + ") = " + Math.exp(an_exp01) + "<br />";
+      //「自然」對數method
+      math_result_div.innerHTML += "Math.log(" + an_e + ") = log<sub>e</sub>" + an_e + " = " + Math.log(an_e) + "<br />";
+
+      //分隔線
+      math_result_div.innerHTML +=
+        "<hr />";
+      }
+      {
+      math_result_div.innerHTML += "Math.pow(3, 2) = " + Math.pow(3, 2) + "<br />";
+      math_result_div.innerHTML += "Math.sqrt(9) = " + Math.sqrt(9) + "<br />";
+
+      //分隔線
+      math_result_div.innerHTML +=
+        "<hr />";
+      }
+      {
+      math_result_div.innerHTML += "Math.max(3.2, -3.2) = " + Math.max(3.2, -3.2) + "<br />";
+      math_result_div.innerHTML += "Math.min(3.2, -3.2) = " + Math.min(3.2, -3.2) + "<br />";
+
+      }
+
+      //-->
+    </script>
+
+    <h2>String（字串）物件</h2>
+    參考資料：<a
+href='https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/
+String' target='_blank'>MDN</a><br />
+    <div id='string_property_result'></div>
+    <script type='text/javascript'>
+      <!--
+      var string_property_result_div = document.getElementById("string_property_result");
+
+      string_property_result_div.innerHTML += "<h3>String（字串）物件的property（屬性）</h3>";
+      {
+      string_property_result_div.innerHTML +=
+"<h4>String.length</h4>";
+      var an_ASCII_string = "abcdefghijklmnopqrstuvwxyz";
+      var an_UNICODE_string = "這是一個含有中文字元的字串";
+
+      string_property_result_div.innerHTML += "字串\"" +
+        an_ASCII_string + "\"的length屬性 = " +
+        an_ASCII_string.length + "<br />";
+      string_property_result_div.innerHTML += "字串\"" +
+        an_UNICODE_string + "\"的length屬性 = " +
+        an_UNICODE_string.length + "<br />";
+      }
+      //-->
+    </script>
+    <div id='string_method_result'></div>
+    <script type='text/javascript'>
+      <!--
+      var string_method_result_div = document.getElementById("string_method_result");
+
+      string_method_result_div.innerHTML += "<h3>String（字串）物件的method（行為）</h3>";
+      {
+      string_method_result_div.innerHTML += "<h4>String.charAt(字元的index（索引）數值)</h4>"
+      var string01 = "0123456789";
+      var string02 = "零一二三四五六七八九";
+
+      string_method_result_div.innerHTML += '"' +
+        string01 + '"字串的第1個字元為' + "'" +
+        string01.charAt(0) + "'<br />";
+      string_method_result_div.innerHTML += '"' +
+        string01 + '"字串的第2個字元為' + "'" +
+        string01.charAt(1) + "'<br />";
+        string_method_result_div.innerHTML += '"' +
+        string02 + '"字串的第1個字元為' + "'" +
+        string02.charAt(0) + "'<br />";
+      string_method_result_div.innerHTML += '"' +
+        string02 + '"字串的第2個字元為' + "'" +
+        string02.charAt(1) + "'<br />";
+      }
+      {
+      string_method_result_div.innerHTML += "<h4>String.charCodeAt(字元的index（索引）數值)</h4>"
+      var string01 = "0123456789";
+      var string02 = "零一二三四五六七八九";
+
+      string_method_result_div.innerHTML += '"' +
+        string01 + '"字串的第1個字元的Unicode(ASCII)數值為' + string01.charCodeAt(0) + "<br />";
+      string_method_result_div.innerHTML += '"' +
+        string01 + '"字串的第2個字元的Unicode(ASCII)數值為' + string01.charCodeAt(1) + "<br />";
+      string_method_result_div.innerHTML += '"' +
+        string02 + '"字串的第1個字元的Unicode數值為' +
+        string02.charCodeAt(0) + "<br />";
+      string_method_result_div.innerHTML += '"' +
+        string02 + '"字串的第2個字元的Unicode數值為' +
+        string02.charCodeAt(1) + "<br />";
+
+      string_method_result_div.innerHTML +=
+"<h4>String.fromCharCode(字元的Unicode-16(ASCII)數值(, ...))（static函式）</h4>"
+      string_method_result_div.innerHTML += "內有Unicode(ASCII)數值48的字串為" + '"' + String.fromCharCode(48) + '"<br />';
+      string_method_result_div.innerHTML += "內有Unicode數值38646的字串為" + '"' + String.fromCharCode(38646) + '"<br />';
+      string_method_result_div.innerHTML += "內有Unicode數值為38646、19968的字串為" + '"' + String.fromCharCode(38646, 19968) + '"<br />';
+      //分隔線
+      string_method_result_div.innerHTML +=
+        "<hr />";
+      }
+      {
+      string_method_result_div.innerHTML +=
+"<h4>String.concat(要與呼叫此method的String物件連接的String物件)</h4>"
+      string_method_result_div.innerHTML += 'string01 = "0123456789"' + "<br />";
+      var string01 = "0123456789";
+      string_method_result_div.innerHTML += 'string02 = "零一二三四五六七八九"' + "<br />";
+      var string02 = "零一二三四五六七八九";
+
+      string_method_result_div.innerHTML += "string01.concat(string02) = \"" +
+        string01.concat(string02) + "\" = string01 + string02 = \"" + string01 +
+        string02 + "\"<br />";
+      string_method_result_div.innerHTML += "<br />"
+
+      string_method_result_div.innerHTML += "string01 = string01.concat(string02);<br />";
+      string01 = string01.concat(string02);
+      string_method_result_div.innerHTML += 'string01 = "' + string01 + '"<br />';
+      string_method_result_div.innerHTML += 'string01 = "0123456789";' + "<br />";
+      string01 = "0123456789";
+      string_method_result_div.innerHTML += "string01 = string01 + string02;" +
+        "<br />";
+      string01 = string01 + string02;
+      string_method_result_div.innerHTML += 'string01 = "' + string01 +
+'"<br />';
+      //分隔線
+      string_method_result_div.innerHTML +=
+        "<hr />";
+      }
+
+      {
+      string_method_result_div.innerHTML +=
+"<h4>String.indexOf(要得到其index（索引）數值的String物件)</h4>"
+      string_method_result_div.innerHTML += 'string01 = "abcdefghijklmnopqrstuvwxyz"' + "<br />";
+      var string01 = "abcdefghijklmnopqrstuvwxyz";
+
+      string_method_result_div.innerHTML += 'string01.indexOf("abc") = ' +
+        string01.indexOf("abc") + "<br />";
+      string_method_result_div.innerHTML += 'string01.indexOf("xyz") = ' +
+        string01.indexOf("xyz") + "<br />";
+
+      string_method_result_div.innerHTML +=
+"<h4>String.lastIndexOf(要得到其index（索引）數值的String物件)</h4>";
+      //分隔線
+      string_method_result_div.innerHTML +=
+        "<hr />";
+      }
+
+      {
+      string_method_result_div.innerHTML +=
+"<h4>String.replace(要搜索的String物件, 要取代的String物件)</h4>";
+      //分隔線
+      string_method_result_div.innerHTML +=
+        "<hr />";
+      }
+
+      {
+      string_method_result_div.innerHTML +=
+"<h4>String.slice(要開始分割的「『字元index數值（正整數或0）』或『從倒數第二個字元的index數值當作-1以遞減方式算起的字元index數值（負整數）』」(, 要開始分割的「『字元index數值（正整數或0）』或『從倒數第二個字元的index數值當作-1以遞減方式算起的字元index數值（負整數）』」))</h4>";
+      string_method_result_div.innerHTML += 'string01 = "abcdefghijklmnopqrstuvwxyz"' + "<br />";
+      var string01 = "abcdefghijklmnopqrstuvwxyz";
+
+      string_method_result_div.innerHTML += 'string01.slice(0,3) = "' +
+        string01.slice(0,3) + '"<br />';
+      string_method_result_div.innerHTML += 'string01.slice(0) = "' +
+        string01.slice(0) + '"<br />';
+      string_method_result_div.innerHTML += "string01.slice(-3,-1) = \"" +
+        string01.slice(-3,-1) + "\"<br />";
+      string_method_result_div.innerHTML += "<del>string01.slice(-3,0) = " +
+        "\"xyz\"" + "</del><br />";
+      string_method_result_div.innerHTML += "string01.slice(-3) = \"" +
+        string01.slice(-3) + "\"<br />";
+
+      string_method_result_div.innerHTML +=
+"<h4>String.substring(子字串開始（或結束）的字元index（索引）數值(, 子字串結束（或開始）的字元後一個字元的index（索引）數值))</h4><br />參考資料：<a href='http://rapd.wordpress.com/2007/07/12/javascript-substr-vs-substring/#comment-1597' target='_blank'>Javascript: substr() v.s. substring()</a><br />";
+      string_method_result_div.innerHTML += 'string01.substring(0,3) = "' +
+        string01.substring(0,3) + '"<br />';
+      string_method_result_div.innerHTML += 'string01.substring(0) = "' +
+          string01.substring(0) + '"<br />';
+      string_method_result_div.innerHTML += "<del>string01.substring(-3,-1) = \"xy\"</del><br />";
+      string_method_result_div.innerHTML += "<del>string01.substring(-3,0) = \"xyz\"</del><br />";
+      string_method_result_div.innerHTML += "<del>string01.substring(-3) = \"xyz\"</del><br />";
+
+      string_method_result_div.innerHTML +=
+"<h4>String.substr(子字串開始（或結束）的字元index（索引）數值(, 子字串的總字元數))</h4>";
+      string_method_result_div.innerHTML += "string01.substr(0,3) = \"" +
+        string01.substr(0,3) + "\"<br />";
+      string_method_result_div.innerHTML += "string01.substr(0,6) = \"" +
+        string01.substr(0,6) + "\"<br />";
+      string_method_result_div.innerHTML += "string01.substr(3) = \"" +
+        string01.substr(3) + "\"<br />";
+      //分隔線
+      string_method_result_div.innerHTML +=
+        "<hr />";
+      }
+      {
+      string_method_result_div.innerHTML +=
+"<h4>Array <- String.split(用來分離字串的分隔符號的String)</h4>";
+      var string_be_splitted = "abc def ghi";
+      var i;
+
+      for(i = 0; i < string_be_splitted.split(" ").length; i++){
+      string_method_result_div.innerHTML += "\"" + string_be_splitted + "\".split(\" \")[" + i + "]= \"" + string_be_splitted.split(" ")[i] + "\"<br />";
+      }
+      //分隔線
+      string_method_result_div.innerHTML +=
+        "<hr />";
+      }
+      {
+      string_method_result_div.innerHTML += "<h4>String.toUpperCase()</h4>";
+      string_method_result_div.innerHTML += "\"aBcDeFg這個不是英文字\".toUpperCase() = \"" + "aBcDeFg這個不是英文字".toUpperCase() + "\"<br />";
+      string_method_result_div.innerHTML += "<h4>String.toLowerCase()</h4>";
+      string_method_result_div.innerHTML += "\"aBcDeFg這個不是英文字\".toLowerCase() = \"" + "aBcDeFg這個不是英文字".toLowerCase() + "\"<br />";
+      }
+      //-->
+    </script>
+    <h2>Date物件(Object)</h2>
+    參考資料：<a href='https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date' target='_blank'>Mozilla開發者社群網路</a>
+    <h3>Date物件的property（屬性）</h3>
+    <div id='date_property_result'></div>
+    <script type='text/javascript'>
+      <!--
+
+      //-->
+    </script>
+    <h3>Date物件的method（行為）</h3>
+    <div id='date_method_result'></div>
+    <script type='text/javascript'>
+      <!--
+      date_method_result_div = document.getElementById("date_method_result");
+
+      var now_time = new Date();
+      {/*Date.getTime()、Date.valueOf()*/
+      date_method_result_div.innerHTML +=
+        "<h4>Date.getTime()、Date.valueOf()</h4>";
+      date_method_result_div.innerHTML +=
+        "現在時刻與1970年1月1日0時0分0秒相距" +
+        now_time.getTime() + "微秒。" + "<br />";
+      date_method_result_div.innerHTML +=
+        "現在時刻與1970年1月1日0時0分0秒相距" +
+        now_time.valueOf() + "微秒。";
+
+      //分隔線
+      date_method_result_div.innerHTML +=
+        "<hr />";
+      }
+      {/*Date.getFullYear()*/
+      date_method_result_div.innerHTML +=
+        "<h4>Date.getFullYear()</h4>";
+      date_method_result_div.innerHTML += "今年是" +
+        now_time.getFullYear() + "年。";
+
+      /*Date.getMonth()*/
+      date_method_result_div.innerHTML +=
+        "<h4>Date.getMonth()</h4>";
+      date_method_result_div.innerHTML += "這個月是" +
+        (now_time.getMonth() + 1) + "月。";
+
+
+      /*Date.getDay()*/
+      var zh_TW_day_string = new Array("星期日",
+        "星期一", "星期二", "星期三", "星期四", "星期五",
+        "星期六");
+      date_method_result_div.innerHTML +=
+        "<h4>Date.getDay()</h4>";
+      date_method_result_div.innerHTML += "今天是" +
+        zh_TW_day_string[now_time.getDay()] + "。";
+
+      //分隔線
+      date_method_result_div.innerHTML +=
+        "<hr />";
+      }
+
+      {/*Date.getHours()、Date.getMinutes()、Date.getSeconds()、
+        Date.getMilliseconds()*/
+      date_method_result_div.innerHTML +=
+        "<h4>Date.getHours()、Date.getMinutes()、Date.getSeconds()、Date.getMilliseconds()</h4>";
+      var hours = now_time.getHours();
+      var minutes = now_time.getMinutes();
+      var seconds = now_time.getSeconds();
+      var milliseconds = now_time.getMilliseconds();
+
+      /*前句*/
+      date_method_result_div.innerHTML += "現在是";
+
+      /*如果是下午就更改小時數跟詞語*/
+      if(hours >= 13){
+        date_method_result_div.innerHTML += "下午" +
+        (hours - 12);
+      }
+      else{
+        date_method_result_div.innerHTML += "上午" +
+        hours;
+      }
+
+      /*後句*/
+      date_method_result_div.innerHTML += "點" + minutes
+      + "分" + seconds + "秒" + milliseconds + "微秒。<br />";
+
+      //分隔線
+      date_method_result_div.innerHTML +=
+        "<hr />";
+      }
+      {/*Date.getTimezoneOffset()*/
+      date_method_result_div.innerHTML +=
+        "<h4>Date.getTimezoneOffset()</h4>";
+
+      date_method_result_div.innerHTML += "您的電腦設定的時區是:UTC+"
+        + -(now_time.getTimezoneOffset() / 60) + "。<br />";
+
+      //分隔線
+      date_method_result_div.innerHTML +=
+        "<hr />";
+      }
+      {/*Date.toString()、Date.toLocaleString()、Date.toUTCString()*/
+      date_method_result_div.innerHTML +=
+        "<h4>Date.toString()</h4>";
+      date_method_result_div.innerHTML +=
+        "now_time.toString() = \"" + now_time.toString() + "\"<br />";
+
+      date_method_result_div.innerHTML +=
+        "<h4>Date.toLocaleString()</h4>";
+      date_method_result_div.innerHTML +=
+        "now_time.toLocaleString() = \"" +
+        now_time.toLocaleString() + "\"<br />";
+
+      date_method_result_div.innerHTML +=
+        "<h4>Date.toUTCString()</h4>";
+      date_method_result_div.innerHTML +=
+        "now_time.toUTCString() = \"" +
+        now_time.toUTCString() + "\"<br />";
+
+      date_method_result_div.innerHTML +=
+        "<h4>Date.toISOString()（ECMAScript 5新增）</h4>";
+      date_method_result_div.innerHTML += "參考資料：<a href='https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/toISOString' target='_blank'>Mozilla開發者社群網路</a><br />";
+      date_method_result_div.innerHTML +=
+        "now_time.toISOString() = \"" +
+        now_time.toISOString() + "\"<br />";
+
+      //分隔線
+      date_method_result_div.innerHTML +=
+        "<hr />";
+      }
+      {
+      date_method_result_div.innerHTML +=
+        "<h4>Date.setTime()</h4>";
+      //分隔線
+      date_method_result_div.innerHTML +=
+        "<hr />";
+
+      date_method_result_div.innerHTML +=
+        "<h4>Date.setFullYear()</h4>";
+
+      date_method_result_div.innerHTML +=
+        "<h4>Date.setMonth()</h4>";
+
+      date_method_result_div.innerHTML +=
+        "<h4>Date.setDate()</h4>";
+
+      date_method_result_div.innerHTML +=
+        "<h4>Date.setHours()</h4>";
+
+      date_method_result_div.innerHTML +=
+        "<h4>Date.setMinutes()</h4>";
+
+      date_method_result_div.innerHTML +=
+        "<h4>Date.setSeconds()</h4>";
+      }
+      //-->
+    </script>
+
+    <h2>Window物件(object)</h2>
+    <h3>Window物件的property（屬性）</h3>
+    <h3>Window物件的method（行為）</h3>
+    <h4>intervalID&lt;-Window.setInterval(要重複執行的statement（語句）, 重複執行的時間間隔（單位為微秒）)</h4>
+    <h4>Window.clearInterval(intervalID)</h4>
+
+    <h2>參考資料</h2>
+    <pre>Notes on substring():
+
+      If start equals stop, it returns an empty string.
+      If stop is omitted, it extracts characters to the end of the string.
+      If either argument is less than 0 or is NaN, it is treated as if it were 0.
+      If either argument is greater than the string's length, either argument will use the string's length.
+      If start > stop, then substring will swap those 2 arguments.
+
+  Notes on slice():
+
+      If stop is omitted, slice extracts chars to the end of the string, exactly like substring().
+      If start > stop, slice() will NOT swap the 2 arguments.
+      If start is negative, slice() will set char from the end of string, exactly like substr() in Firefox. This behavior is observed in both Firefox and IE.
+      If stop is negative, slice() will set stop to: (string.length – 1) – stop (original value).
+    </pre>
+    <!--footer-->
+    <!--版本：1.00(0)201112012220-->
+    <div class='footer'>
+     <hr />
+      <!--W3C HTML Markup Validator通過之後可以放上此圖片-->
+      <a href="http://validator.w3.org/check?uri=referer" target = '_blank'>
+      <img src="http://www.w3.org/Icons/valid-xhtml10"
+           alt="W3C HTML Markup Validation Service驗證(XHTML 1.0)通過圖示 | W3C HTML Markup Validater Service Verification Passed Icon"
+           height="31"
+           width="88" />
+      </a><br />
+    這個圖示代表了這個網頁的開發者致力於讓這個網頁的內容能盡量符合W3C的規範，讓不同的網頁瀏覽器能更加正確的顯示這個網頁而不會出現相容性問題。您可以點擊這個圖示讓W3C的Markup Validation Service再次對這個網頁進行檢查。
+      <hr />
+      <!--W3C CSS Validator通過之後可以放上此圖片-->
+      <a href="http://jigsaw.w3.org/css-validator/check/referer" target = '_blank'>
+        <img style="border:0;width:88px;height:31px"
+             src="http://jigsaw.w3.org/css-validator/images/vcss"
+             alt="W3C CSS Validation Service驗證通過圖示 | W3C CSS Validater Service Verification Passed Icon" />
+      </a><br />
+    這個圖示代表了這個網頁的開發者致力於讓這個網頁使用的CSS（Cascading Style Sheets，層疊樣式表）的內容能盡量符合W3C的規範，讓不同的網頁瀏覽器能更加正確的顯示這個網頁而不會出現相容性問題。您可以點擊這個圖示讓W3C的CSS Validation Service再次對這個網頁進行檢查。
+    </div>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--（此標籤包住的內容為註解）以上為XML和DTD(Document Type
+    Definition)的宣告-->
+
+<!--XHTML 1.0 Transitional範本
+    網頁名稱：Test tags in body
+    網頁版本：1.01(1)201112172109
+    網頁用途：Same as name.
+    網頁開發者：（請見meta標籤內容）
+    XHTML範本版本：0.03(3)201110070402
+    XHTML範本製作者：林博仁(Henry Lin)
+    本網頁使用的智慧財產授權：姓名標示─非商業性─相同方式分享(BY-CC-SA)
+修訂紀錄
+  1.01(1)201112172109
+  -colspan不同瀏覽器顯示不相容情形
+-->
+
+<!--html標籤：html主要內容
+    XHTML規範需要／選用的屬性：xmlns, xml:lang
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xml:lang="zh_TW"
+       lang="zh_TW">
+  <!--head標籤：包含一些metadata（中介資料）-->
+  <head>
+    <!--title標籤：顯示於標題列(title bar)的文字-->
+    <title>測試body元素內之元素(Test tags in body) | HTML測試專案(HTML testing project)</title>
+    <!--meta標籤：一些非此標籤所能表示的一些其他的metadata（中介資料）
+          http-equiv屬性：用來變更伺服器跟user-agent的行為，使用content屬性定義這個屬性的值。
+            content-type屬性：
+              text/html：原本要用application/xhtml+xml的MIME（Multipurpose Internet Mail Extensions，多用途網際網路郵件檔案類型），不過為了支援HTML 4相容性故使用text/html
+              charset：網頁內容使用的字元集合(charset)
+          參考網址：https://developer.mozilla.org/en/HTML/Element/meta
+    -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="林博仁(Henry Lin)" />
+    <meta name="description" content="" />
+    <meta name="generator" content="" />
+    <meta name="keywords" content="test,html,body" />
+    <meta name="publisher" content="" />
+    <meta name="robots" content="index,follow" />
+  </head>
+  <!--body標籤：包含網頁內容(content)
+      XHTML規範需要／選用的屬性：
+        xml:lang：用來宣告XML使用的語言
+  -->
+  <body xml:lang="zh-TW" lang="zh-TW">
+
+    <!--p標籤：
+        標示一個段落(paragraph)，段落與其外之元素會有一定大小的間隔
+          id通用屬性：給元素分類的ID-->
+    <span id="start_of_the_page">--p(paragraph)元素--</span><br />
+    <p>這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段這是第1段</p>
+    <p>這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段這是第2段</p>
+    <p>這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段這是第3段</p>
+
+    <!--div標籤：
+        可以用來放入其他內容的container（容器）
+        參考網址：https://developer.mozilla.org/En/HTML/Element/Div
+    -->
+    <div>
+      --heading element--<br />
+      使用方法：<a href="https://developer.mozilla.org/en/HTML/Element/h1"
+                  target="_blank">MDN</a><br />
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </div>
+
+    <div>
+      --anchor element--<br />
+      使用方法：<a href="https://developer.mozilla.org/en/HTML/Element/a" target="_blank">MDN</a><br />
+      <a href="http://www.google.com.tw">Google台灣</a>〔預設〕（會使用這個頁面連結）<br />
+      <a href="http://www.cool3c.com" target="_blank">癮科技(cool3C)</a>（會開啟另一個視窗／分頁連結）<br />
+      <a href="#start_of_the_page">點此超連結回到網頁最上面測試p元素處</a><br />
+    </div>
+    <br />
+    <br />
+    <div>
+      --一些<del>要少用的</del>文字裝飾element（改用ＣＳＳ）--<br />
+      <strong>Stronged text</strong><br />
+      <em>Emphasized text</em><br />
+      使用方法：<a href="https://developer.mozilla.org/en/HTML/Element/em"
+                  target="_blank">MDN</a><br /><br />
+      <del>Deleted text</del><br />
+      <sup>Supercripted text</sup>Normal text<sub>Subscripted text</sub><br />
+      使用方法：<a href="https://developer.mozilla.org/en/HTML/Element/sup"
+                  target="_blank">MDN</a>
+
+    </div>
+    <br />
+    <br />
+    <div>
+      --image element--<br />
+      使用方法：<a href="https://developer.mozilla.org/en/HTML/element/img" target="_blank">MDN</a><br />
+      <img src="../Resources/Test_tags_in_body/Demo_image.png" alt="This is a demo image." width="640" height="400"/><br />
+    </div>
+
+    <div>
+      --special characters--<br />
+      &amp; = &amp;amp;<br />
+      &#60; = &amp;#60;<br />
+      &#x26; = &amp;#x26;<br />
+      &copy; = &amp;copy;<br />
+      &frac14; = &amp;frac14;<br />
+    </div>
+    <br />
+    <br />
+    <div>
+      --horizontal rule--<br />
+      <hr />
+    </div>
+
+    <br />
+    <br />
+
+    <div>
+      --ordered/unordered list element（list樣式請配合CSS-list-style-type）--<br />
+      使用方法：<a href="https://developer.mozilla.org/en/HTML/Element/ul" target="_blank">MDN</a>
+      <ul>
+        <li>台北(Taipei)
+          <ul>
+            <li>台北１０１<br />特色：
+              <ol>
+                <li>很高（廢話）！</li>
+                <li>東西很貴。</li>
+                <li>我還沒進去過（默）...</li>
+              </ol>
+            </li>
+            <li>微風廣場<br />特色：
+              <ol>
+                <li>我還沒進去過（默）...</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+        <li>台中(Taichung)
+          <ul>
+            <li>台中電子街<br />特色：
+              <ol>
+                <li>（流口水）</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+        <li>高雄
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      --table element--<br />
+      使用方法：<a href="https://developer.mozilla.org/en/HTML/Element/table" target="_blank"></a><br />
+      <table>
+        <caption>這是一個table元素</caption>
+        <thead>
+          <tr>
+            <th>行１</th>
+            <th colspan="2">行２＋行３</th>
+            <th>行４</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="3">列４（行１～４）</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td rowspan="2" colspan="2">列２～３行１～２</td>
+            <td>列２行３</td>
+            <td rowspan="2">行４（列２～３）</td>
+          </tr>
+          <tr>
+            <td>列３行３</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <br />
+    <div>
+      <!--form標籤：包住一個可以讓使用者傳送資訊到web伺服器的元件
+            action屬性：傳送資訊的目的網路位址，伺服器自此網路位址處理接收到的
+                        資訊。
+            method屬性：傳送資訊的方法，有get和post兩種。
+      -->
+      --form element--<br />
+      使用方法：<a href="https://developer.mozilla.org/en/HTML/Element/form"
+                   target="_blank">MDN</a><br />
+      <form action="" method="post">
+        <!--label標籤：用來當作UI（User Interface，使用者介面）控制元件
+                       (control element)說明文字，可以藉由for屬性連結或是直接
+                       包住控制元件以與之連結
+            參考網址：https://developer.mozilla.org/en/HTML/Element/label
+        -->
+        <!--input標籤：form標籤內輸入資訊的元件
+              type屬性：input標籤的種類
+                hidden：不會顯示但是會一併傳送到伺服器的資料。
+                text：可輸入文字的區域。
+                radio：單選選項。
+                password：可輸入密碼的區域。
+                checkbox：多選選項。
+                submit：傳送資料的按鈕。
+                reset：將表單資料重設的按鈕。
+              value：input標籤顯示的字（在type="radio"、"checkbox"時為必要選項）
+            參考網址：https://developer.mozilla.org/en/HTML/Element/input
+        -->
+        <input type="hidden" name="A_hidden_data" value="A_hidden_datas_value" />
+        請填入下列表單(Please fill in the following form)：<br />
+        <label>
+          姓名(name)（不想填可以留空）：
+          <input type="text" name="Name" size="20" maxlength="35"/><br />
+        </label>
+        性別(gender)：
+        <label>
+          <input type="radio" name="Gender" value="female" />女(female)
+        </label>
+        <label>
+          <input type="radio" name="Gender" value="male" />男(male)
+        </label>
+        <label>
+          <input type="radio" name="Gender" value="blank" checked="checked" />
+          留空(blanked)
+        </label><br />
+        （本站使用女性優先排列方式(This site uses female first order)）<br />
+        生日(birthday)：
+        <label>
+          <select name="Birthday_month">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          月(month)
+        </label>
+        <label>
+          <select name="Birthday_day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          日(day)
+        </label><br />
+
+        種族(race)：
+        <label>
+          <input type="radio" name="Race" value="human" checked="checked" />
+          人類(human)
+        </label>
+        <label>
+          <input type="radio" name="Race" value="others" disabled="disabled" />
+          其他(others)
+        </label><br />
+
+        <label>
+          帳號名稱(Account name)：<br />
+          （限30個半形字元大小(limit : 30 half-sized characters)）<br />
+          <input type="text" name="Account_name" size="20" maxlength="30" />
+          <br />
+        </label>
+        <label>
+          帳號密碼(Account password)：<br />
+          （太過脆弱的密碼可能會被拒絕採用。<br />
+          (Password may be rejected if it is too weak.)）<br />
+          <input type="password" name="Account_password" size="20" />
+          <br />
+        </label>
+        喜歡的內容(Content you like)：<br/>
+        <label>
+          <input type="checkbox" value="technology" />科技(technology)
+        </label>
+        <label>
+          <input type="checkbox" value="nature" />大自然(nature)
+        </label>
+        <label>
+          <input type="checkbox" value="life" />生活(life)
+        </label>
+          <br />
+        <!--text area標籤：顯示一個多行的文字輸入區域。
+              name屬性：用來識別自己的名稱。
+              rows屬性：區域的列數。
+              cols屬性：區域的行大小（單位：半形字元寬度）
+        -->
+        <label>
+          自我介紹(Introduce yourself)：<br />
+          <textarea name="Introduce_yourself" rows="5" cols="30"></textarea>
+        </label>
+          <br />
+        <input type="submit" value="送出資料(submit data)" />
+        <input type="reset" value="清空重填(reset form)" />
+      </form>
+    </div>
+    <!--W3C HTML Markup Validator通過之後可以放上此圖片-->
+    <p>
+      <a href="http://validator.w3.org/check?uri=referer">
+      <img src="http://www.w3.org/Icons/valid-xhtml10"
+           alt="有效的XHTML 1.0 Transitional格式網頁 | Valid XHTML 1.0 Transitional"
+           height="31"
+           width="88" />
+      </a>
+    </p>
+  </body>
+</html>

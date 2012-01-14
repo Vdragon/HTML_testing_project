@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--（此標籤包住的內容為註解）以上為XML和DTD(Document Type 
+    Definition)的宣告-->
+
+<!--XHTML 1.0 Transitional範本
+    本網頁使用的智慧財產授權：創用CC BY-NC-SA授權2.0及以上版本
+    詳細資料註明於下方meta元素。
+-->
+
+<!--html標籤：html主要內容
+    XHTML規範需要／選用的屬性：xmlns, xml:lang
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xml:lang="zh_TW"
+       lang="zh_TW">
+  <!--head標籤：包含一些metadata（中介資料）-->
+  <head>
+    <!--title標籤：顯示於標題列(title bar)的文字-->
+    <title>測試CSS(Testing CSS) | HTML測試專案(HTML testing project)</title>
+
+    <!--style標籤：放置用來修飾網頁內容的設定（通常為CSS）
+          type屬性：設定的格式（CSS用的是text/css）
+    -->
+    <style type="text/css">
+      .lighter-font
+      {
+        font-weight:lighter;
+      }
+      .normal-font
+      {
+        font-weight:normal;
+      }
+      .bold-font
+      {
+        font-weight:bold;
+      }
+      .bolder-font
+      {
+        font-weight:bolder;
+      }
+      .num100-font
+      {
+        font-weight:100;
+      }
+      .num200-font
+      {
+        font-weight:200;
+      }
+      .num300-font
+      {
+        font-weight:300;
+      }
+      .num400-font
+      {
+        font-weight:400;
+      }
+      .num500-font
+      {
+        font-weight:500;
+      }
+      .num600-font
+      {
+        font-weight:600;
+      }
+      .num700-font
+      {
+        font-weight:700;
+      }
+      .num800-font
+      {
+        font-weight:800;
+      }
+      .num900-font
+      {
+        font-weight:900;
+      } 
+      .green-background
+      {
+        background-color:green;
+      }
+      .font-serif
+      {
+        font-family:serif;
+      }
+      .font-sans-serif
+      {
+        font-family:sans-serif;
+      }
+      .font-cursive
+      {
+        font-family:cursive;
+      }
+      .font-fantasy
+      {
+        font-family:fantasy;
+      }
+      .font-monospace
+      {
+        font-family:monospace;
+      }
+      .font-ubuntu-default
+      {
+        font-family:"文泉驛正黑", "AR PL UKai CN", "ubuntu", serif;
+      }
+      .text-underline
+      {
+        text-decoration:underline;
+      }
+      .text-overline
+      {
+        text-decoration:overline;
+      }
+      .text-line-through
+      {
+        text-decoration:line-through;
+      }
+      .text-blink
+      {
+        text-decoration:blink;
+      }
+      .test-pseudo-class-hover:hover
+      {
+        background-color:green;
+      }
+      .test-multiple-elementA,.test-multiple-elementB
+      {
+        background-color:green;
+      }
+      .test-parent-element .test-child-element
+      {
+        background-color:green;
+      }
+      .test-length-measurements-px
+      {
+        width:100px;
+        height:100px;
+        background-color:green;
+      }
+      .test-length-measurements-em
+      {
+        font-family:serif;
+        font-size:medium;
+        width:1em;
+        height:1em;
+        background-color:green;
+      }    
+      .test-length-measurements-ex
+      {
+        font-family:serif;
+        font-size:medium;      
+        width:1ex;
+        height:1ex;
+        background-color:green;
+      }        
+      .test-length-measurements-percentage
+      {
+        font-family:serif;
+        font-size:200%;      
+        width:1em;
+        height:1em;
+        background-color:green;
+      }
+      .test-length-measurements-in
+      {    
+        width:1in;
+        height:1in;
+        background-color:green;
+      }     
+      .test-length-measurements-cm
+      {    
+        width:1cm;
+        height:1cm;
+        background-color:green;
+      } 
+      .test-length-measurements-mm
+      {    
+        width:10mm;
+        height:10mm;
+        background-color:green;
+      } 
+      .test-length-measurements-pt
+      {    
+        width:10pt;
+        height:10pt;
+        background-color:green;
+      }   
+      .test-length-measurements-pc
+      {    
+        width:1pc;
+        height:1pc;
+        background-color:green;
+      }                          
+    </style>
+    
+    <link href="../Stylesheets/Test_CSS/Test01.css" 
+          rel="stylesheet" 
+          type="text/css" />
+    
+    <!--meta標籤：一些非此標籤所能表示的一些其他的metadata（中介資料）
+          name屬性：metadata的名稱
+            author：網頁的創作者名稱。
+            description：網頁的內容描述。
+            generator：產生這份網頁的軟體名稱。
+            keyword：這個網頁的關鍵字。
+            robots：要求搜索引擎的索引軟體對這個網頁採取的行動。
+          content屬性：這個metadata名稱之內容
+          http-equiv屬性：用來變更伺服器跟user-agent的行為，使用content屬性定義這個屬性的值。
+            content-type：
+              text/html：原本要用application/xhtml+xml的MIME（Multipurpose Internet Mail Extensions，多用途網際網路郵件檔案類型），不過為了支援HTML 4相容性故使用text/html
+              charset：網頁內容使用的字元集合(charset)
+          參考網址：https://developer.mozilla.org/en/HTML/Element/meta
+    -->
+    <!--網頁版本-->
+    <meta name="webpage-version" content="1.03(3)201110091512" />
+    <!--XHTML範本版本-->
+    <meta name="template-version" content="0.03(3)201110070402" />
+    <meta name="author" content="林博仁(Henry Lin, pika1021@gmail.com)" />
+    <meta name="description" content="測試CSS(Testing CSS)" />
+    <meta name="generator" content="VIM文字編輯器" />
+    <meta name="keywords" content="test,CSS" />
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  </head>
+  <!--body標籤：包含網頁內容(content)
+      XHTML規範需要／選用的屬性：
+        xml:lang：用來宣告XML使用的語言
+  -->
+  <body xml:lang="zh-TW" lang="zh-TW">
+    --套用行內樣式(inline style)--<br />
+    <div>
+      <!--CSS:font-size：設定元素內字型大小
+          參考資料：https://developer.mozilla.org/en/CSS/font-size
+      -->
+      <span style="font-size:12pt">This text is set to font-size:12pt.</span><br />
+      <span style="font-size:18pt">This text is set to font-size:18pt.</span><br />
+      <span style="font-size:24pt">This text is set to font-size:24pt.</span><br />
+      <!--CSS:color：設定元素內文字顏色
+          參考資料：https://developer.mozilla.org/en/CSS/color
+      -->
+      <span style="color:rgb(255,0,0)">This text is set RED.</span><br />
+      <span style="color:#00FF00">This text is set GREEN.</span><br />
+      <span style="color:blue">This text is set BLUE.</span>
+    </div>
+    
+    <br />
+    
+    --套用嵌入式樣式表--<br />
+    ----font-weight----<br />
+    <div>
+      <!--CSS:font-weight：設定元素內文字粗細度
+          參考資料：https://developer.mozilla.org/en/CSS/font-weight
+      -->
+      <span class="lighter-font">這段文字的font-weight被設定為lighter。</span><br />
+      <span class="normal-font">這段文字的font-weight被設定為normal。</span><br />
+      <span class="bold-font">這段文字的font-weight被設定為bold。</span><br />
+      <span class="bolder-font">這段文字的font-weight被設定為bolder。</span><br />
+      <span class="num100-font">這段文字的font-weight被設定為100。</span><br />
+      <span class="num200-font">這段文字的font-weight被設定為200。</span><br />
+      <span class="num300-font">這段文字的font-weight被設定為300。</span><br />
+      <span class="num400-font">這段文字的font-weight被設定為400。</span><br />
+      <span class="num500-font">這段文字的font-weight被設定為500。</span><br />
+      <span class="num600-font">這段文字的font-weight被設定為600。</span><br />
+      <span class="num700-font">這段文字的font-weight被設定為700。</span><br />
+      <span class="num800-font">這段文字的font-weight被設定為800。</span><br />
+      <span class="num900-font">這段文字的font-weight被設定為900。</span><br />
+      （若顯示的內容只有100~500、600~900的區別，表示網頁瀏覽器使用的字型不支援多個層級的粗細度）
+    </div>
+    
+    <br />
+    
+    ----background-color property----<br />
+    <!--CSS:background-color：設定元素內的背景顏色
+        參考網址：https://developer.mozilla.org/en/CSS/background-color
+    -->
+    <div class="green-background">
+      這個區域的背景顏色被設定為綠色。
+    </div>
+    
+    <br />
+    
+    ----font-family property----<br />
+    <!--CSS:font-family：設定元素內文字的字型優先順序
+        參考網址：https://developer.mozilla.org/en/CSS/font-family
+    -->
+    <div>
+      <span class="font-serif">這段文字的font-family被設定為serif</span><br />
+      <span class="font-sans-serif">這段文字的font-family被設定為sans-serif</span><br />
+      <span class="font-cursive">這段文字的font-family被設定為cursive</span><br />
+      <span class="font-fantasy">這段文字的font-family被設定為fantasy</span><br />
+      <span class="font-monospace">這段文字的font-family被設定為monospace</span><br />
+      （實際顯示的字型由網頁瀏覽器設定的預設字型決定）<br />
+      <span class="font-ubuntu-default">這段文字的font-family被設定為'文泉驛正黑', 'AR PL UKai CN', 'ubuntu', serif</span><br />
+      （實際顯示的字型由作業系統支援的字型及網頁瀏覽器設定的預設字型決定）      
+    </div>
+    
+    <br />
+    
+    ----text-decoration property----<br />
+    <!--CSS:text-decoration：設定元素內文字的樣式
+        參考網址：https://developer.mozilla.org/en/CSS/text-decoration
+    -->    
+    <div>
+      <span class="text-underline">這段文字的text-decoration被設定為underline</span><br />
+      <span class="text-overline">這段文字的text-decoration被設定為overline</span><br />
+      <span class="text-line-through">這段文字的text-decoration被設定為line-through</span><br />
+      <span class="text-blink">（不廣泛被採用）這段文字的text-decoration被設定為blink</span>
+    </div>
+    
+    <br />
+    
+    ----pseudo classes（偽類別）----<br />
+    <!--pseudo classes（偽類別）：用來選取一些符合某些特殊的情況的元素
+        參考網址：https://developer.mozilla.org/en/CSS/Pseudo-classes
+    -->
+    <div class="test-pseudo-class-hover">
+      當滑鼠游標（或其他指向內容的行為）在此區域上時，此區域的背景顏色會變成綠色。
+    </div>
+    
+    <br />
+    
+    ----apply rules to multiple elements(OR)----<br />
+    <div>
+      <span class="test-multiple-elementA">如果被套用樣式這段文字的背景會呈現綠色</span><br />
+      <br />
+      <span class="test-multiple-elementB">如果被套用樣式這段文字的背景會呈現綠色</span><br />
+    </div>
+    
+    <br />
+    
+    ----apply rules to child element of a certain parent element----<br />
+    <div>
+      <span class="test-parent-element">如果被套用樣式<span class="test-child-element">這幾個字</span>的背景會呈現綠色</span><br />
+    </div>   
+     
+    <br />
+    
+    ----相對的／絕對的長度度量----<br />
+    <div>
+      ------100*100px（相對）------<br />
+      <div class="test-length-measurements-px">
+      </div><br />
+      ------1*1em（相對）------<br />
+      <div class="test-length-measurements-em">
+      </div>M<br />
+      ------1*1ex（相對）------<br />
+      <div class="test-length-measurements-ex">
+      </div>x<br />
+      ------200*200%(font-size)（相對）------<br />
+      <div class="test-length-measurements-percentage">
+      </div><br />
+      ------1*1inch（絕對）------<br />
+      <div class="test-length-measurements-in">
+      </div><br />
+      ------1*1cm（絕對）------<br />
+      <div class="test-length-measurements-cm">
+      </div><br />
+      ------10*10mm（絕對）------<br />
+      <div class="test-length-measurements-mm">
+      </div><br />      
+      ------10*10pt（絕對）------<br />
+      <div class="test-length-measurements-pt">
+      </div><br />
+      ------1*1pc（絕對）------<br />
+      <div class="test-length-measurements-pc">
+      </div><br /> 
+    </div>
+    
+    <br />
+    
+    --套用外部樣式表--<br />
+    ----position property(z-index property)----<br />
+    <!--CSS-position：設定元素的排列方式
+        參考網址：https://developer.mozilla.org/en/CSS/position
+        CSS-z-index：設定元素render的前後順序
+        參考網址：https://developer.mozilla.org/en/CSS/z-index
+    -->
+    <div class="test-position-big-square">
+      <div class="test-position-small-square">
+      </div>
+    </div>
+    
+    <br />
+    
+    ----background-image property----<br />
+    <!--CSS-background-image：設定元素的背景圖片
+        參考網址：https://developer.mozilla.org/en/CSS/background-image
+        CSS-background-position：設定元素背景圖片的位置
+        參考網址：https://developer.mozilla.org/en/CSS/background-position
+        CSS-background-repeat：設定元素背景圖片的鋪陳是否連續
+        參考網址：https://developer.mozilla.org/en/CSS/background-repeat
+        CSS-background-attachment：設定元素背景圖片是否要再顯示區域上固定不動。
+        參考網址：https://developer.mozilla.org/en/CSS/background-attachment
+    -->
+    <div class="test-background-image">
+    </div>
+    
+    <br />
+    
+    ----text-indent property----<br />
+    <!--CSS-text-indent：設定文字的縮排
+        參考網址：https://developer.mozilla.org/en/CSS/text-indent
+    -->
+    <div>
+      <p class="test-text-indent">
+        這段文字被縮排了2ex的距離。
+      </p>
+    </div>
+    
+    ----font-style property----<br />
+    <!--CSS-font-style：設定文字的斜度？
+        參考網址：https://developer.mozilla.org/en/CSS/font-style
+    -->
+    <div>
+      <span class="test-font-style-normal">這段文字的font-style被設定為normal</span><br />
+      <span class="test-font-style-italic">這段文字的font-style被設定為italic</span><br />
+      <span class="test-font-style-oblique">這段文字的font-style被設定為oblique</span><br />            
+    </div>
+    
+    <br />
+    
+    ----text-align property----<br />
+    <!--CSS-text-align：設定文字的對齊
+        參考網址：https://developer.mozilla.org/en/CSS/text-align
+    -->
+    <div class="test-text-align-left">
+      這段文字所在的div的text-align被設定為left
+    </div>
+    <div class="test-text-align-center">
+      這段文字所在的div的text-align被設定為center
+    </div>
+    <div class="test-text-align-right">
+      這段文字所在的div的text-align被設定為right
+    </div>                
+
+    <br />
+    
+    ----overflow property----<br />
+    <!--CSS-overflow：設定當元素內的content（內容）超出元素範圍時的處理方式。
+        參考網址：https://developer.mozilla.org/en/CSS/overflow
+                https://developer.mozilla.org/En/CSS/Overflow-x
+                https://developer.mozilla.org/En/CSS/Overflow-y
+    -->
+    <div class="test-overflow">
+      這段文字所在的div的overflow被設定為scroll
+    </div>
+    <br />
+    
+    ----box-model:padding（內襯）----<br />
+    <!--CSS-padding：元素內的content（內容）到元素的距離。
+        參考網址：https://developer.mozilla.org/en/CSS/padding
+                https://developer.mozilla.org/en/CSS/padding-top
+                https://developer.mozilla.org/en/CSS/padding-right
+                https://developer.mozilla.org/en/CSS/padding-bottom
+                https://developer.mozilla.org/en/CSS/padding-left
+    -->
+    <div class="test-padding">
+      這段文字所在的div的padding被設定為50px
+    </div>
+    <br />
+
+    ----box-model:border（邊框）----<br />
+    <!--CSS-border：元素的邊到母元素的邊的距離。
+        參考網址：https://developer.mozilla.org/en/CSS/border
+                https://developer.mozilla.org/en/CSS/border-style
+                https://developer.mozilla.org/en/CSS/border-width
+                https://developer.mozilla.org/en/CSS/border-color
+    -->
+    <div class="test-border-style">
+      這段文字所在的div的border-style被設定為solid
+    </div>    
+    <div class="test-border-width">
+      這段文字所在的div的border-style被設定為solid、border-width被設定為20px
+    </div>
+    <div class="test-border-color">
+      這段文字所在的div的border-style被設定為solid、border-width被設定為20px、border-color被設定為green
+    </div>    
+        
+    <br />
+    
+    ----box-model:margin（留白）----<br />
+    <!--CSS-margin：元素的邊到母元素的邊的距離。
+        參考網址：https://developer.mozilla.org/en/CSS/margin
+                https://developer.mozilla.org/en/CSS/margin-top
+                https://developer.mozilla.org/en/CSS/margin-right
+                https://developer.mozilla.org/en/CSS/margin-bottom
+                https://developer.mozilla.org/en/CSS/margin-left
+    -->
+    <div class="test-margin-left">
+      這段文字所在的div的margin-left被設定為50px
+    </div>
+    <br />
+    
+    ----套用多個類別到元素上----<br />
+    <div>
+      <span class="test-multiple-class-bold test-multiple-class-oblique">這段文字被設定為粗體跟強迫斜體(oblique)</span><br />
+    </div>
+    <br />
+
+    <div class="test-float-right">
+      ----float property----<br />
+      <!--CSS:float：讓元素脫離原本的順序，此元素以後的元素則往前遞補並如果有必要的話包圍此元素
+          參考網址：https://developer.mozilla.org/en/CSS/float
+      -->
+      這個div的float被設定為right
+    </div>
+
+    ----media類型----<br />
+    <br />
+    <div class="test-media-type">
+      這段文字被設定為被列印時呈白底黑字<br />
+    </div>
+    <br />
+
+    ----display property----<br />
+    <div>
+      下一行的文字的display被設定為none<br />
+      <span class="test-display-none">這一行字不應該被顯示</span>
+    </div>
+    
+    <br />
+    
+    <!--footer-->
+    <div>
+      <!--Powered by 文泉驛字型-->
+      <a href="http://wenq.org/" title="文泉驛">
+        <img src="http://wenq.org/gallery/albums/userpics/10122/WQY-88x31.png" alt="Powered by 文泉驛字型"/>
+      </a>本網頁使用文泉驛字型設計<br />
+      
+      <!--W3C HTML Markup Validator通過之後可以放上此圖片-->
+      <a href="http://validator.w3.org/check?uri=referer">
+      <img src="http://www.w3.org/Icons/valid-xhtml10" 
+           alt="有效的XHTML 1.0 Transitional格式網頁 | Valid XHTML 1.0 Transitional"
+           height="31" 
+           width="88" />
+      </a>本網頁符合XHTML 1.0 Transitional規範，如果有問題請聯絡 pika1021@gmail.com
+      處理，謝謝！<br /> 
+      <!--W3C CSS Validator通過之後可以放上此圖片-->
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+             src="http://jigsaw.w3.org/css-validator/images/vcss"
+             alt="有效的CSS | Valid CSS!" />
+      </a>本網頁符合CSS規範，如果有問題請聯絡 pika1021@gmail.com處理，謝謝！ 
+    </div>      
+  </body>
+</html>

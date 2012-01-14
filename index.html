@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--（此標籤包住的內容為註解）以上為XML和DTD(Document Type
+    Definition)的宣告-->
+
+<!--
+  網頁名稱：HTML測試專案(HTML testing project)
+  網頁版本：（請見網頁內容）
+  網頁用途：（請見網頁內容）
+  網頁開發者：（請見meta標籤內容）
+  XHTML範本版本：1.02(2)201110080207
+  XHTML範本製作者：林博仁(Henry Lin)
+  修訂紀錄(ChangeLog)：
+    1.01(1)201109300443	改為XHTML 1.0 Transitional 格式
+    1.02(2)201110080207 將內容轉移至其他網頁
+-->
+
+<!--html標籤：html主要內容
+    XHTML規範需要／選用的屬性：xmlns, xml:lang
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xml:lang="zh_TW"
+       lang="zh_TW">
+<!--head標籤：包含一些metadata（中介資料）-->
+<head>
+  <!--title標籤：顯示於標題列(title bar)的文字-->
+  <title>首頁(Mainpage) | HTML測試專案(HTML testing project)</title>
+    <!--meta標籤：一些非此標籤所能表示的一些其他的metadata（中介資料）
+          http-equiv屬性：用來變更伺服器跟user-agent的行為，使用content屬性
+                          定義這個屬性的值。
+            content-type屬性：
+              text/html：原本要用application/xhtml+xml的MIME（Multipurpose
+                         Internet Mail Extensions，多用途網際網路郵件檔案類
+                         型），不過為了支援HTML 4相容性故仍使用text/html
+              charset：網頁內容使用的字元集合(charset)
+          參考網址：https://developer.mozilla.org/en/HTML/Element/meta
+    -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="林博仁(Henry Lin, pika1021@gmail.com)" />
+    <meta name="description" content="測試HTML" />
+    <meta name="generator" content="VIM文字編輯器" />
+    <meta name="keywords" content="測試,HTML" />
+    <meta name="publisher"
+          content="Ｖ字龍軟體開發組 | Vdragon Software Development Group" />
+    <meta name="robots" content="index,follow" />
+
+    <!--link標籤的用法請見測試CSS子網頁-->
+    <link href='http://ind.ntou.edu.tw/~pika1021/Stylesheets/Generic_stylesheet.css' rel='stylesheet' type='text/css' />
+  </head>
+  <!--body標籤：包含網頁內容(content)
+      XHTML規範需要／選用的屬性：
+        xml:lang：用來宣告XML使用的語言
+        class（廣域屬性）：用來區分同一個類別的多個元素的屬性
+  -->
+  <body xml:lang="zh-TW" lang="zh-TW" class='generic_body'>
+    <!--關於body內常見的tag的使用方法請連入下方頁面「測試body元素內使用的元素」-->
+    <!--header-->
+    <!--版本：1.01(1)201112021727-->
+    <div class='header'>
+      <a href='../index.html' target='_self'>到外層頁面</a>
+      <hr />
+    </div>
+    <h1>HTML測試專案(HTML testing project)</h1>
+    網頁版本：1.06(6)201112152223<br />
+    網頁用途：測試HTML網頁<br />
+    注意：本專案網頁在中文字型：<a href="http://wenq.org/" target="_blank">文泉驛微米黑</a>、英文字型：<a href="http://font.ubuntu.com/" target="_blank">Ubuntu Font Family</a>底下可以有最好的視覺效果。<br />
+    您可以透過字型名稱之超連結連到該字型的官方網站免費下載並安裝這些字型。<br />
+    <h2>測試列表</h2>
+    <a href="Webpages/Test_tags_in_body.html" target="_blank">測試body元素內使用的元素</a><br />
+    <a href="Webpages/Test_CSS.html" target="_blank">測試CSS</a><br />
+    <a href="Webpages/Test_CSS_dropdown_menu.html" target="_blank">測試CSS dropdown選單</a><br />
+    <a href='Webpages/Test_Javascript.html' target='_self'>測試Javascript</a><br />
+    <a href='Webpages/Test_div_sidebar.html' target='_self'>測試div測欄</a><br />
+    <br />
+
+    <div>
+      <!--Powered by 文泉驛字型-->
+      <a href="http://wenq.org/" title="文泉驛">
+        <img src="http://wenq.org/gallery/albums/userpics/10122/WQY-88x31.png" alt="Powered by 文泉驛字型"/>
+      </a>本網頁使用文泉驛字型設計<br />
+
+      <!--W3C HTML Markup Validator通過之後可以放上此圖片-->
+      <a href="http://validator.w3.org/check?uri=referer">
+      <img src="http://www.w3.org/Icons/valid-xhtml10"
+           alt="有效的XHTML 1.0 Transitional格式網頁 |
+                Valid XHTML 1.0 Transitional"
+           height="31"
+           width="88" />
+      </a>本網頁符合XHTML 1.0 Transitional規範，如果有問題請聯絡
+      <a href="mailto:pika1021@gmail.com">pika1021@gmail.com</a>處理，謝謝！
+    </div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+/*Test01.css
+  CSS用途：測試用途。
+  CSS版本：1.00(0)201110091653
+  CSS創作者：林博仁(Henry Lin, pika1021@gmail.com)
+  此CSS使用的智慧財產授權：自由使用(free)  
+*/
+@media screen{
+.test-position-big-square
+{
+  width:200px;
+  height:200px;
+  z-index:1;
+  position:relative;
+  background-color:green;
+}
+.test-position-small-square
+{
+  width:100px;
+  height:100px;
+  z-index:0;
+  background-color:red;
+  position:absolute;
+  top:50px;
+  right:50px;
+}
+.test-background-image
+{
+  width:200px;
+  height:200px;
+  background-image:url("../../Resources/Test_CSS/Demo_image.png");
+  background-position:50px 50px;
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+}
+.test-text-indent
+{
+  text-indent:2ex;
+}
+.test-font-style-normal
+{
+  font-style:normal;
+}
+.test-font-style-italic
+{
+  font-style:italic;
+}
+.test-font-style-oblique
+{
+  font-style:oblique;
+}
+.test-text-align-left
+{
+  text-align:left;
+}
+.test-text-align-center
+{
+  text-align:center;
+}
+.test-text-align-right
+{
+  text-align:right;
+}
+.test-overflow
+{
+  width:50px;
+  height:50px;
+  overflow:auto;
+}
+.test-padding
+{
+  padding:50px;
+}
+.test-margin-left
+{
+  margin-left:50px;
+}
+.test-border-style
+{
+  border-style:solid;
+}
+.test-border-width
+{
+  border-style:solid;
+  border-width:20px;
+}
+.test-border-color
+{
+  border-style:solid;
+  border-width:20px;
+  border-color:green;
+}
+.test-multiple-class-bold
+{
+  font-weight:bold;
+}
+.test-multiple-class-oblique
+{
+  font-style:oblique;
+}
+.test-float-right
+{
+  float:right;
+}
+.test-media-type
+{
+  background-color:black;
+  color:white;
+}
+.test-display-none
+{
+  display:none;
+}
+}
+@media print{
+.test-media-type
+{
+  color:black;
+  background-color:white;
+}
+}
